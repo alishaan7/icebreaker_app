@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header clearfix">
+          <% include ../partials/header %>
+      </header>
+
+      <main role="main">
+        <!-- Form Controls: Simple Forms -->
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h2>Add a new Icebreaker</h2>
+            <form action="/" method="post">
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="question" class="col-form-label">Question</label>
+                  <input type="text" class="form-control" id="question" name="questionContent" placeholder="Enter your Question here.">
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <% include ../partials/footer %>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
